@@ -1,0 +1,4 @@
+<view class="container">
+    <text>选择关卡</text>
+    <button bindtap='startOne'>第一关</button>
+</view>

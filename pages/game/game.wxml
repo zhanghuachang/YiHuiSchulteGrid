@@ -1,0 +1,14 @@
+<view class="container">
+
+    <view class='img'>
+        {{time}}
+    </view>
+
+    <view class='view1'>
+        <view class='view2'>
+            <view class='grid' wx:key="" wx:for="{{arr}}">
+                <view class="{{item[0].id == checkId ? 'grid_active':''}}  grid_value" bindtap='getValue' data-id='{{item[0].id}}'>{{item[0].value}}</view>
+            </view>
+        </view>
+    </view>
+</view>

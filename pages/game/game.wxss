@@ -1,0 +1,42 @@
+page{
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+}
+
+.img{
+    width: 100rpx;
+    height: 20rpx;
+}
+
+
+.view1{
+    width: 80%;
+    height: 80%;
+}
+
+.view2{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.grid{
+    width: 24%;
+    height: 24%;
+    float: left;
+    text-align: center;
+    border: 1rpx solid white;
+    background-color: orange;
+    line-height: 60px;
+    font-size: 60rpx;
+}
+.grid_value{
+    width: 100%;
+    height: 100%; 
+}
+.grid_active{
+    width: 100%;
+    height: 100%;
+    background-color: #85b200;
+}

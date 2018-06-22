@@ -1,0 +1,15 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/game/game",
+    "pages/main/main",
+    "pages/end/end",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "易慧之百家姓",
+    "navigationBarTextStyle":"black"
+  }
+}

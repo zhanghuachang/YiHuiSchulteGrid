@@ -1,0 +1,38 @@
+<view class="mask" bindtap="go" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="container">
+    <view class="userinfo">
+        <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+        <block wx:else>
+            <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+            <text class="userinfo-nickname">{{userInfo.nickName}}</text> 舒尔特方格 之 百家姓
+        </block>
+    </view>
+
+    <view class="modalDlg" wx:if="{{showModal}}">
+        <view class='box_up'>
+            <view class='box_up_one'>请选择关卡</view>
+            <view class='box_up_two' bindtap="go">X</view>
+        </view>
+
+        <view class='box_main'>
+            <scroll-view scroll-y="true" style="height: 400rpx;">
+                <view id="" class="" bindtap='getNum' data-id="1" style='text-align:center'>第一关</view>
+                <view id="" class="" bindtap='getNum' data-id="2" style='text-align:center'>第二关</view>
+                <view id="" class="" bindtap='getNum' data-id="3" style='text-align:center'>第三关</view>
+                <view id="" class="" bindtap='getNum' data-id="4" style='text-align:center'>第四关</view>
+                <view id="" class="" bindtap='getNum' data-id="5" style='text-align:center'>第五关</view>
+                <view id="" class="" bindtap='getNum' data-id="6" style='text-align:center'>第六关</view>
+                <view id="" class="" bindtap='getNum' data-id="7" style='text-align:center'>第七关</view>
+                <view id="" class="" bindtap='getNum' data-id="8" style='text-align:center'>第八关</view>
+                <view id="" class="" bindtap='getNum' data-id="9" style='text-align:center'>第九关</view>
+                <view id="" class="" bindtap='getNum' data-id="10" style='text-align:center'>第十关</view>
+            </scroll-view>
+        </view>
+    </view>
+
+
+    <view class="usermotto">
+        <!-- <text class="user-motto">{{motto}}</text> -->
+        <button bindtap='submit'>开始闯关</button>
+    </view>
+</view>

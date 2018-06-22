@@ -1,0 +1,5 @@
+<view class="container">
+    用时{{m}}分{{s}}秒
+    <button bindtap='againStart'>再玩一次</button>
+    <button bindtap='backHome'>返回首页</button>
+</view>
